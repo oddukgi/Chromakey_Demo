@@ -1,7 +1,7 @@
-# Chromakey_Demo
-Change Image Background Program
-## Feature
- * A girl move other background.
-## IDE
+####Chromakey_Demo
+ - Change Image Background Program
+
+####IDE
  * Qt5
+ 
  
