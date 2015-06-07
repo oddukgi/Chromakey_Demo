@@ -2,7 +2,7 @@
 #include "ui_widget.h"
 #include <QDebug>
 
-#define IMGSOURCE ":res/Img_demo.png"
+#define IMGSOURCE ":res/girl.png"
 #define IMGTARGET ":res/panda.png"
 
 // created by darongE

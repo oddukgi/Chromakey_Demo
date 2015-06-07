@@ -498,7 +498,7 @@ compiler_rcc_clean:
 	-$(DEL_FILE) qrc_resource.cpp
 qrc_resource.cpp: ../src/resource.qrc \
 		../res/panda.png \
-		../res/Img_demo.png
+		../res/girl.png
 	/opt/Qt/5.4/gcc/bin/rcc -name resource ../src/resource.qrc -o qrc_resource.cpp
 
 compiler_moc_header_make_all: moc_widget.cpp
@@ -857,6 +857,11 @@ widget.o: ../src/widget.cpp ../src/widget.h \
 		/opt/Qt/5.4/gcc/include/QtGui/qinputmethod.h \
 		/opt/Qt/5.4/gcc/include/QtWidgets/QButtonGroup \
 		/opt/Qt/5.4/gcc/include/QtWidgets/qbuttongroup.h \
+		/opt/Qt/5.4/gcc/include/QtWidgets/QHBoxLayout \
+		/opt/Qt/5.4/gcc/include/QtWidgets/qboxlayout.h \
+		/opt/Qt/5.4/gcc/include/QtWidgets/qlayout.h \
+		/opt/Qt/5.4/gcc/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt/5.4/gcc/include/QtWidgets/qgridlayout.h \
 		/opt/Qt/5.4/gcc/include/QtWidgets/QHeaderView \
 		/opt/Qt/5.4/gcc/include/QtWidgets/qheaderview.h \
 		/opt/Qt/5.4/gcc/include/QtWidgets/qabstractitemview.h \
@@ -875,6 +880,11 @@ widget.o: ../src/widget.cpp ../src/widget.h \
 		/opt/Qt/5.4/gcc/include/QtWidgets/qtabbar.h \
 		/opt/Qt/5.4/gcc/include/QtWidgets/qtabwidget.h \
 		/opt/Qt/5.4/gcc/include/QtWidgets/qrubberband.h \
+		/opt/Qt/5.4/gcc/include/QtWidgets/QLabel \
+		/opt/Qt/5.4/gcc/include/QtWidgets/qlabel.h \
+		/opt/Qt/5.4/gcc/include/QtWidgets/QPushButton \
+		/opt/Qt/5.4/gcc/include/QtWidgets/qpushbutton.h \
+		/opt/Qt/5.4/gcc/include/QtWidgets/qabstractbutton.h \
 		/opt/Qt/5.4/gcc/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o widget.o ../src/widget.cpp
 
